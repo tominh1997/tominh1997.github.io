@@ -500,38 +500,31 @@
                     <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
                         <div class="panel panel-danger">
                             <div class="panel-body">
-                                <form id="reused_form">
+                                <form id="reused_form" action="http://formspree.io/mcto@uci.edu" method="POST">
                                     <div class="form-group">
                                         <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
                                         <input type="text" name="name" class="form-control" placeholder="Enter Name">
                                     </div>
                                     <div class="form-group">
                                         <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-                                        <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                        <input type="email" name="_replyto" class="form-control" placeholder="Enter Email">
                                     </div>
                                     <div class="form-group">
                                         <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-                                        <textarea rows="5" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                                        <textarea rows="5" name="body" class="form-control" placeholder="Type Your Message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-primary btn-block btn-send-message">Send &rarr;</button>
+                                        <button  class="btn btn-primary btn-block btn-send-message" type="submit" value="Send">Send &rarr;</button>
                                     </div>
+                                    <!-- <form ><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
                                 </form>
-                                <div id="error_message" style="width:100%; height:100%; display:none; ">
-                                    <h4>
-                                        Error
-                                    </h4>
-                                    Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
-</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Form Ended -->
+
 					</div>
 				</div>
 			</section>
