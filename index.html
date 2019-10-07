@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,13 +38,13 @@
 	<div id="my-page">
 		<div class="container-wrap">
 		<a href="#" class="js-my-nav-toggle my-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="my-aside" role="complementary" class="border js-fullheight">
+		<aside id="my-aside" class="border js-fullheight">
 			<div class="text-center">
 				<a href="#"><div id="author-img"></div> </a> 
 				<h1 id="my-logo"><a href="#">Minh To</a></h1>
 				<span class="position">Undergraduate Student</span>
 			</div>
-			<nav id="my-main-menu" role="navigation" class="navbar">
+			<nav id="my-main-menu" class="navbar">
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
@@ -87,7 +87,7 @@
 					   				<div class="slider-text-inner">
 					   					<div class="desc" >	
 						   					<h1>My name is Minh To</h1>
-						   					<p><a href="docs/Technical Resume.pdf" target ="_blank" class="btn btn-primary btn-learn">Download Resume<i class="icon-download"></i></a></p>
+						   					<p><a href="docs/Technical_Resume.pdf" target ="_blank" class="btn btn-primary btn-learn">Download Resume<i class="icon-download"></i></a></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -137,9 +137,8 @@
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <div class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
-
 					               <div class="timeline-icon color-1">
 					                  <i class="icon-pen2"></i>
 					               </div>
@@ -150,9 +149,9 @@
 					                  	for 3 quarters. <br> Major GPA: 3.5.</p>
 					               </div>
 					            </div>
-					         </article>
+					         </div>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					         <div class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-2">
 					                  <i class="icon-pen2"></i>
@@ -162,13 +161,13 @@
 					                  <p>Graduated in the top 10% of my class. <br>Cumulative GPA: 4.2.</p>
 					               </div>
 					            </div>
-					         </article>
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					         </div>
+					         <div class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
 					            </div>
-					         </article>
+					         </div>
 					      </div>
 					   </div>
 				   </div>
@@ -183,7 +182,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-4 text-center animate-box">
-							<span class="my-counter js-counter" data-from="0" data-to="269" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="my-counter js-counter" data-from="0" data-to="696" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="my-counter-label">Cups of coffee</span>
 						</div>
 						<div class="col-md-4 text-center animate-box">
@@ -191,7 +190,7 @@
 							<span class="my-counter-label">Programming Courses</span>
 						</div>
 						<div class="col-md-4 text-center animate-box">
-							<span class="my-counter js-counter" data-from="0" data-to="6" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="my-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
 							<span class="my-counter-label">Projects</span>
 						</div>
 					</div>
@@ -299,81 +298,83 @@
 						</div>
 					</div>
 					<div class="row" id="projectHolder">
-						<div class="col-md-6 animate-box item python" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/Othello.png);">
+					<div class="col-md-6 animate-box item python" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/chatbot.jpg);">
 								<div class="desc">
-									<a href="https://github.com/tominh1997/Othello_Project" target="_blank" rel="noopener noreferrer">
+									<a href="https://github.com/tominh1997/Facebook-Chatbot-Template" target="_blank" rel="noopener noreferrer">
 										<div class="con">
-											<h3>Othello Game</h3>
-											<span>Constructed a GUI using tkinter library that allows the users to customize the size of the gameboard up to a grid of 16 x 16 as well as the game's rules.<br>
-											Implemented a console version that allows 2 users to play a game against each other.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-										</p> -->
+											<h3>Facebook Chatbot</h3>
+											<ul>
+												<li>A personal chatbot that is hosted on the Heroku to respond to incoming messages on 
+												Facebook Messenger in place of the users whenever they are not available to do so within
+												the specified time limit.</li>
+												<li>Utilized the API from Dialogflow to support natural language processing and machine
+												learning so the users can effectively train their own chatbot to interpret incoming
+												messages and have more natural conversations with humans.</li>
+												<li>Utilized the fbchat library with Python to handle GET/POST requests with Facebook so the
+												chatbot can receive messages and reply accordingly.</li>
+												<li>Integrated Dialogflow with Google Calendar API, using Firebase Cloud Functions with Javascript, 
+												to allow for the users and friends of the users to schedule appointments 
+												directly onto their Google Calendar through Facebook Messenger.</li>
+											</ul>
 										</div>
 									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 animate-box item python" data-animate-effect="fadeInRight">
+						<div class="col-md-6 animate-box item java" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/board_game3.jpg);">
+								<div class="desc">
+									<a href="https://github.com/tominh1997/Board-Game-Environment" target="_blank" rel="noopener noreferrer">
+										<div class="con">
+											<h3>Board Game Environment</h3>
+											<ul>
+												<li>A board game environment, consisting of a games' launcher and a codebase, aims to accommodate any 2-player board game that involves 
+												a grid layout and game elements on this layout.</li>
+												<li>Utilized JavaFX and FXML to implement a base graphical user interface that can be customized for any board game to display the game state 
+												after every turn so the players can easily keep track of the progress of the game and correctly make their intended moves.</li>
+												<li>Developed a codebase that includes the common classes and functions shared among all board games so that any new developer can reuse the codebase 
+												through inheritance to implement their new board games and make changes with ease.</li>
+												<li>Supported personal player profiles by saving the progress of the players with their unique usernames to an XML file after exiting so the 
+												players can resume their play session in the future and track their rankings on the leaderboard.</li>
+											</ul>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box item python" data-animate-effect="fadeInTop">
 							<div class="project" style="background-image: url(images/navigation.png);">
 								<div class="desc">
 									<a href="https://github.com/tominh1997/MapQuestNavigationSystem" target="_blank" rel="noopener noreferrer">
 										<div class="con">
 											<h3>Simple Navigation System</h3>
-											<span>Utilized the API from the MapQuest company to retrieve 7 different data types.<br>
-											Displayed text-based information about a trip between a sequence of up to 5 locations based on user’s inputs such as directions, estimated time to complete the trip, total distance of the trip, etc.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-										</p> -->
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box item cpp" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/robot.png);">
-								<div class="desc">
-									<a href="https://github.com/tominh1997/Othello-AI" target="_blank" rel="noopener noreferrer">
-										<div class="con">
-											<h3>Othello AI For Competition</h3>
-											<span>Ranked 8th place out of the total of 287 competitors.<br>
-											Applied the Minimax algorithm and alpha-beta pruning to achieve a 92% win rate out of 572 matches.<br>
-											Customized a unique set of 4 different rules to ensure effective heuristic evaluation.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-										</p> -->
+											<ul>
+												<li>A text-based console that aims to assist the users who want to plan out their commute trips in the most time-efficient way.</li>
+												<li>Utilized the API from the MapQuest company to retrieve 7 different data types within only one callback, minimizing the data retrieval time 
+												so the users can quickly get their desired information.</li>
+												<li>Displayed essential information ranging from directions to the estimated time to complete the trip between a sequence of up to 5 locations 
+												so the users can plan out ahead and travel with ease </li>
+												<li>Customized a set of 4 different rules with additional strategies created by the pros to ensure effective heuristic evaluation of each possible move.</li>
+											</ul>
 										</div>
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 animate-box item cpp" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/Maze.PNG);">
+							<div class="project" style="background-image: url(images/ai1.jpg);">
 								<div class="desc">
-									<a href="https://github.com/tominh1997/Maze-Generator-Solver" target="_blank" rel="noopener noreferrer">
+									<a href="https://github.com/tominh1997/Othello-AI" target="_blank" rel="noopener noreferrer">
 										<div class="con">
-											<h3>Maze Generator & Solver</h3>
-											<span>Applied Backtracking (Depth-First) algorithm to generate or solve a perfect maze where there exists only 1 path from the entrance to the exit.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-										</p> -->
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 animate-box item java" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/ConnectFour.png);">
-								<div class="desc">
-									<a href="https://github.com/tominh1997/ConnectFour" target="_blank" rel="noopener noreferrer">
-										<div class="con">
-											<h3>Connect Four Game</h3>
-											<span>Implemented a console version that allows the user to play against an AI.<br>
-												Utilized the Minimax algorithm with the depth of 6 and alpha-beta pruning to achieve 100% win rate versus the user.</span>
-											<!-- <p class="icon">
-												<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											</p> -->
+											<h3>Othello AI For Hackerrank Competition</h3>
+											<ul>
+												<li>An AI that aims to make the most optimal moves on its turns after evaluating all possible moves in the given board state.</li>
+												<li>Achieved a 92% win rate out of 572 matches, which ranked 8th place out of a total of 287 competitors.</li>
+												<li>Applied the Minimax algorithm along with alpha-beta pruning to minimize the amount of time needed to make a move 
+												so that the AI does not time-out when given a time limit.</li>
+												<li>Customized a set of 4 different rules with additional strategies created by the pros to ensure effective heuristic evaluation of each possible move.</li>
+											</ul>
 										</div>
 									</a>
 								</div>
@@ -384,6 +385,7 @@
 							<p><a href="https://github.com/tominh1997?tab=repositories" class="btn btn-primary btn-lg btn-load-more">See More <i class="icon-eye"></i></a></p>
 						</div>
 					</div>
+				</div>
 				</div>
 			</section>
 
@@ -398,41 +400,48 @@
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <div class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-1">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					                  <h2>UI/UX Design Intern at Art Supply Warehouse<span>   March 2018 - June 2018</span></h2>
-					                  <p>Collaborated in a team of 5 to redesign the pre-existing retailer's website (resulted in a 50% increase in usability and efficiency). <br>
-					                  Conducted 4 different methods of user research and usability testing under the general heuristic guidlines to ensure 100% improvement in users' satisfaction and experiences. <br>
-					              	  Proposed 5 different designs including high fidelity mockups to ASW's supervisor in presentations for considerations. The final report can be found 
-					              	  <a href="docs/ASW Final Report.pdf" id="here" target="_blank"> here</a>.</p>
+					                  <h2>UI/UX Designer at Art Supply Warehouse<span>   March 2018 - June 2018</span></h2>
+					                  <ul>
+										<li>Collaborated in a team to redesign the product details pages by following the usability heuristics guidelines to resolve the usability issues such as 
+										information overloading, which resulted in a 50% improvement in usability and efficiency. </li>
+										<li>Conducted UX research to discover the users' needs and desires in a retailer's website so that the team can use it as a reference for our intended changes 
+										without losing track of the progress</li>
+										<li>Utilized HTML, CSS, and Bootstrap to construct a demo product of a high fidelity mockup for the purpose of usability testing to evaluate the products 
+										for future adjustments so that the final product can ensure 100% improvement in users' satisfaction and experiences. The final report can be found 
+										<a href="docs/ASW_Final_Report.pdf" id="here" target="_blank"> here</a>.</li>
+									  </ul>
 					               </div>
 					            </div>
-					         </article>
+					         </div>
 
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					         <div class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-2">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
 					               	<h2>Event Organizer at The Hangar<span>   October 2014 - December 2014</span></h2>
-					                  <p>Checked in on average 250 guests per event based on the given reservation list. <br>
-					                  Maintained 100% flow of communication with on-stage and behind-the-scene staffs to ensure smooth coordination. <br>
-									  Assisted 3 different stores in selling merchandises and cash handling resulting in a 30% increase in profit.</p>
+									<ul>
+					                  <li>Checked in on average 250 guests per event based on the given reservation list. </li>
+					                  <li>Maintained 100% flow of communication with on-stage and behind-the-scene staffs to ensure smooth coordination. </li>
+									  <li>Assisted 3 different stores in selling merchandises and cash handling resulting in a 30% increase in profit.</li>
+									 </ul>
 					               </div>
 					            </div>
-					         </article>
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					         </div>
+					         <div class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
 					            </div>
-					         </article>
+					         </div>
 					      </div>
 					   </div>
 				   </div>
@@ -461,9 +470,7 @@
 							</div>
 
 							<div class="my-feature my-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div id="my-map">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250.15613201677795!2d-117.98201572397109!3d33.74947207974861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2630eda0cfc9%3A0xaebaffbbbe07ba11!2s14672+Harper+St%2C+Midway+City%2C+CA+92655!5e0!3m2!1sen!2sus!4v1546983934183" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
+								<iframe id="my-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250.15613201677795!2d-117.98201572397109!3d33.74947207974861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2630eda0cfc9%3A0xaebaffbbbe07ba11!2s14672+Harper+St%2C+Midway+City%2C+CA+92655!5e0!3m2!1sen!2sus!4v1546983934183" allowfullscreen></iframe>
 							</div>
 
 							<div class="my-feature my-feature-sm animate-box" data-animate-effect="fadeInLeft">
@@ -475,6 +482,7 @@
 								</div>
 							</div>
 						</div>
+						
             <!-- Form Started -->
             <div class="container col-md-7 col-md-push-1 form-top">
                 <div class="row">
@@ -483,21 +491,20 @@
                             <div class="panel-body">
                                 <form id="reused_form" method="POST" action="https://formspree.io/mcto@uci.edu" target="_blank" rel="noopener noreferrer">
                                     <div class="form-group">
-                                        <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
-                                        <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                                        <label for="name"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
                                     </div>
                                     <div class="form-group">
-                                        <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
-                                        <input type="email" name="_replyto" class="form-control" placeholder="Enter Email">
+                                        <label for="_replyto"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                        <input type="email" name="_replyto" id="_replyto" class="form-control" placeholder="Enter Email">
                                     </div>
                                     <div class="form-group">
-                                        <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
-                                        <textarea rows="5" name="body" class="form-control" placeholder="Type Your Message"></textarea>
+                                        <label for="body"><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                                        <textarea rows="5" name="body" id="body" class="form-control" placeholder="Type Your Message"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <button  class="btn btn-primary btn-block btn-send-message" type="submit" value="Send">Send &rarr;</button>
                                     </div>
-                                    <!-- <form ><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
                                 </form>
                             </div>
                         </div>
